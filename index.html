@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JAMB Rewards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">JAMB<span>Rewards</span></div>
+    <div class="sponsor-brand">Powered by <strong>Biggest Papi</strong></div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#rules">Rules</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Rewarding Academic Excellence</h1>
+    <p>A special ₦1,000 token for high-achieving Jambites.</p>
+    <div class="papi-shoutout">Brought to you by <strong>Biggest Papi</strong></div>
+    
+    <div id="countdown">
+        <div class="time-box"><span id="days">00</span><label>Days</label></div>
+        <div class="time-box"><span id="hours">00</span><label>Hours</label></div>
+        <div class="time-box"><span id="mins">00</span><label>Minutes</label></div>
+    </div>
+</div>
+
+<!-- Send Result Section -->
+<section class="send-result">
+    <div class="container">
+        <div class="main-card">
+            <h2 class="section-title">Send Your Result</h2>
+            <p class="sub-text">Fill the form below to send your result directly to the organiser.</p>
+            <form id="resultForm">
+                <div class="form-row">
+                    <input type="text" id="senderName" name="name" placeholder="Your name" required>
+                    <input type="email" id="senderEmail" name="email" placeholder="Your email (optional)">
+                </div>
+                <div class="form-row">
+                    <input type="text" id="regNumber" name="reg" placeholder="JAMB Reg No / Identifier">
+                </div>
+                <div class="form-row">
+                    <textarea id="resultText" name="result" rows="4" placeholder="Paste your result or write a short message" required></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="bankName" name="bank" placeholder="Bank name" required>
+                    <input type="text" id="accountName" name="accountName" placeholder="Account name" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="accountNumber" name="accountNumber" placeholder="Account number" required pattern="\d*" maxlength="12">
+                </div>
+                <div class="form-row">
+                    <input type="number" id="withdrawAmount" name="amount" placeholder="Withdraw amount (₦) - max 1000" min="0" max="1000" required>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="main-button">Send Result</button>
+                </div>
+                <p class="form-note">On submit your email client will open to send the result to the organiser.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <p>This initiative is made possible through the generosity of <br> 
+    <span class="papi-name">Biggest Papi</span></p>
+</section>
+
+<script src="script.js" defer></script>
+</body>
+</html>
